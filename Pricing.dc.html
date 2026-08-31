@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@500;600;700;800;900&family=Hind+Madurai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Pricing | GrowIndie Digital</title>
+<meta name="description" content="Published retainer pricing from ₹25,000/month with no markup on ad spend, plus a growth calculator to estimate your leads and ROAS.">
+<link rel="canonical" href="https://growindiedigital.in/Pricing.dc.html">
+<link rel="icon" href="assets/logo-gold.png" type="image/png">
+<style>
+:root{--bg: oklch(98.6% 0.005 85);--surface: oklch(100% 0 0);--surface-2: oklch(96.4% 0.009 85);--border: oklch(90.5% 0.014 85);--text: oklch(21% 0.012 80);--text-muted: oklch(47% 0.013 80);--text-faint: oklch(63% 0.013 80);--primary: oklch(47% 0.10 72);--success: oklch(58% 0.13 150);--gradient: linear-gradient(135deg, oklch(31% 0.022 72), oklch(19% 0.013 70));}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Inter','Hind Madurai',sans-serif;text-wrap:pretty;}
+h1,h2{font-family:'Inter Tight','Hind Madurai',sans-serif;letter-spacing:-0.02em;margin:0;}
+p{margin:0;}
+a{color:var(--primary);text-decoration:none;}
+button{cursor:pointer;}
+button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--primary);outline-offset:2px;border-radius:4px;}
+.__skip{position:absolute;left:-9999px;top:8px;z-index:200;background:var(--text);color:white;padding:12px 20px;border-radius:8px;font-size:14px;font-weight:700;}
+.__skip:focus{left:16px;color:white;}
+.__roi-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;}
+@media (max-width:800px){.__roi-grid{grid-template-columns:1fr !important;}}
+</style>
+<script src="content.js"></script>
+<script src="./support.js"></script>
+</helmet>
+<div style="background:var(--bg);min-height:100vh;overflow-x:hidden;">
+<a class="__skip" href="#main">{{ t.skipLink }}</a>
+<dc-import name="Nav" current="pricing" hint-size="100%,72"></dc-import>
+
+<div id="main" tabindex="-1" style="padding:110px 32px 0;">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div style="max-width:640px;margin:0 auto;text-align:center;">
+      <div style="font-size:13px;font-weight:700;color:var(--primary);text-transform:uppercase;letter-spacing:0.08em;">{{ t.pricingEyebrow }}</div>
+      <h1 style="font-size:clamp(30px,3.6vw,48px);font-weight:800;margin-top:14px;">{{ t.pricingTitle }}</h1>
+      <p style="font-size:16px;color:var(--text-muted);margin-top:14px;">{{ t.pricingSub }}</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:24px;margin-top:48px;">
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:22px;padding:36px;transition:transform 0.25s ease,box-shadow 0.25s ease,border-color 0.25s ease;" style-hover="transform:translateY(-6px);border-color:var(--gold-deep);box-shadow:0 0 0 1px var(--gold-deep),0 24px 48px -20px oklch(66% 0.13 62 / 0.45);">
+        <div style="font-size:18px;font-weight:800;">{{ t.tier1Name }}</div>
+        <div style="font-size:14px;color:var(--text-muted);margin-top:8px;">{{ t.tier1Desc }}</div>
+        <div style="display:flex;align-items:baseline;gap:6px;margin-top:24px;"><span style="font-family:'Inter Tight',sans-serif;font-size:34px;font-weight:800;">{{ t.tier1Price }}</span><span style="font-size:14px;font-weight:600;color:var(--text-muted);">{{ t.perMonth }}</span></div>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-top:24px;">
+          <div style="font-size:14px;display:flex;gap:10px;"><span style="color:var(--success);font-weight:800;">✓</span>{{ t.tier1F1 }}</div>
+          <div style="font-size:14px;display:flex;gap:10px;"><span style="color:var(--success);font-weight:800;">✓</span>{{ t.tier1F2 }}</div>
+          <div style="font-size:14px;display:flex;gap:10px;"><span style="color:var(--success);font-weight:800;">✓</span>{{ t.tier1F3 }}</div>
+        </div>
+        <a href="Contact.dc.html" style="display:block;text-align:center;margin-top:28px;background:var(--surface-2);border:1px solid var(--border);border-radius:100px;padding:13px;font-weight:700;font-size:14.5px;color:var(--text);">{{ t.tierCta }}</a>
+      </div>
+      <div style="background:var(--text);border-radius:22px;padding:36px;position:relative;border:1px solid var(--gold-deep);box-shadow:0 0 0 1px var(--gold-deep),0 0 40px -8px oklch(66% 0.13 62 / 0.55),0 30px 60px -20px oklch(20% 0.02 78 / 0.4);transition:transform 0.25s ease,box-shadow 0.25s ease;" style-hover="transform:translateY(-6px);box-shadow:0 0 0 1px var(--gold),0 0 56px -6px oklch(78% 0.15 80 / 0.65),0 30px 60px -20px oklch(20% 0.02 78 / 0.4);">
+        <div style="position:absolute;top:-14px;left:36px;background:var(--gradient);color:white;font-size:12px;font-weight:700;padding:6px 14px;border-radius:100px;">{{ t.mostPopular }}</div>
+        <div style="font-size:18px;font-weight:800;color:white;">{{ t.tier2Name }}</div>
+        <div style="font-size:14px;color:oklch(85% 0.01 78);margin-top:8px;">{{ t.tier2Desc }}</div>
+        <div style="display:flex;align-items:baseline;gap:6px;margin-top:24px;"><span style="font-family:'Inter Tight',sans-serif;font-size:34px;font-weight:800;color:white;">{{ t.tier2Price }}</span><span style="font-size:14px;font-weight:600;color:oklch(78% 0.01 78);">{{ t.perMonth }}</span></div>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-top:24px;">
+          <div style="font-size:14px;display:flex;gap:10px;color:white;"><span style="color:oklch(75% 0.15 150);font-weight:800;">✓</span>{{ t.tier2F1 }}</div>
+          <div style="font-size:14px;display:flex;gap:10px;color:white;"><span style="color:oklch(75% 0.15 150);font-weight:800;">✓</span>{{ t.tier2F2 }}</div>
+          <div style="font-size:14px;display:flex;gap:10px;color:white;"><span style="color:oklch(75% 0.15 150);font-weight:800;">✓</span>{{ t.tier2F3 }}</div>
+        </div>
+        <a href="Contact.dc.html" style="display:block;text-align:center;margin-top:28px;background:var(--gradient);border-radius:100px;padding:13px;font-weight:700;font-size:14.5px;color:white;">{{ t.tierCta }}</a>
+      </div>
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:22px;padding:36px;transition:transform 0.25s ease,box-shadow 0.25s ease,border-color 0.25s ease;" style-hover="transform:translateY(-6px);border-color:var(--gold-deep);box-shadow:0 0 0 1px var(--gold-deep),0 24px 48px -20px oklch(66% 0.13 62 / 0.45);">
+        <div style="font-size:18px;font-weight:800;">{{ t.tier3Name }}</div>
+        <div style="font-size:14px;color:var(--text-muted);margin-top:8px;">{{ t.tier3Desc }}</div>
+        <div style="display:flex;align-items:baseline;gap:6px;margin-top:24px;"><span style="font-family:'Inter Tight',sans-serif;font-size:34px;font-weight:800;">{{ t.tier3Price }}</span><span style="font-size:14px;font-weight:600;color:var(--text-muted);">{{ t.perMonth }}</span></div>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-top:24px;">
+          <div style="font-size:14px;display:flex;gap:10px;"><span style="color:var(--success);font-weight:800;">✓</span>{{ t.tier3F1 }}</div>
+          <div style="font-size:14px;display:flex;gap:10px;"><span style="color:var(--success);font-weight:800;">✓</span>{{ t.tier3F2 }}</div>
+          <div style="font-size:14px;display:flex;gap:10px;"><span style="color:var(--success);font-weight:800;">✓</span>{{ t.tier3F3 }}</div>
+        </div>
+        <a href="Contact.dc.html" style="display:block;text-align:center;margin-top:28px;background:var(--surface-2);border:1px solid var(--border);border-radius:100px;padding:13px;font-weight:700;font-size:14.5px;color:var(--text);">{{ t.tierCta }}</a>
+      </div>
+    </div>
+    <p style="max-width:720px;margin:32px auto 0;text-align:center;font-size:14px;color:var(--text-faint);line-height:1.6;">{{ t.pricingNote }}</p>
+  </div>
+</div>
+
+<div style="padding:100px 32px;background:var(--surface-2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin-top:80px;">
+  <div style="max-width:1000px;margin:0 auto;">
+    <div style="text-align:center;max-width:640px;margin:0 auto;">
+      <div style="font-size:13px;font-weight:700;color:var(--primary);text-transform:uppercase;letter-spacing:0.08em;">{{ t.roiEyebrow }}</div>
+      <h2 style="font-size:clamp(28px,3.4vw,40px);font-weight:800;margin-top:14px;">{{ t.roiTitle }}</h2>
+      <p style="font-size:15.5px;color:var(--text-muted);margin-top:12px;">{{ t.roiSub }}</p>
+    </div>
+    <div class="__roi-grid" style="background:var(--surface);border:1px solid var(--border);border-radius:24px;padding:44px;margin-top:44px;">
+      <div>
+        <div style="display:flex;justify-content:space-between;font-size:14px;font-weight:600;"><span>{{ t.roiSpendLabel }}</span><span style="color:var(--primary);font-weight:800;">₹{{ roiSpendLabel }}</span></div>
+        <input type="range" min="10000" max="1000000" step="5000" value="{{ roiSpend }}" onchange="{{ setRoiSpend }}" oninput="{{ setRoiSpend }}" style="width:100%;margin-top:16px;accent-color:var(--primary);" />
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--text-faint);margin-top:6px;"><span>₹10,000</span><span>₹10,00,000</span></div>
+        <div style="margin-top:32px;">
+          <div style="font-size:14px;font-weight:600;margin-bottom:12px;">{{ t.roiIndustryLabel }}</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <button onclick="{{ setRoiIndustryEcommerce }}" style="{{ pillBtnStyleEcommerce }}">{{ t.roiEcommerce }}</button>
+            <button onclick="{{ setRoiIndustrySaas }}" style="{{ pillBtnStyleSaas }}">{{ t.roiSaas }}</button>
+            <button onclick="{{ setRoiIndustryLocal }}" style="{{ pillBtnStyleLocal }}">{{ t.roiLocal }}</button>
+          </div>
+        </div>
+      </div>
+      <div style="background:var(--surface-2);border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:20px;justify-content:center;">
+        <div><div style="font-size:13px;color:var(--text-muted);font-weight:600;">{{ t.roiLeadsLabel }}</div><div style="font-size:30px;font-weight:800;color:var(--text);margin-top:4px;">{{ roiLeads }}</div></div>
+        <div><div style="font-size:13px;color:var(--text-muted);font-weight:600;">{{ t.roiRoasLabel }}</div><div style="font-size:30px;font-weight:800;color:var(--text);margin-top:4px;">{{ roiRoasLow }}x – {{ roiRoasHigh }}x</div></div>
+        <div style="font-size:12px;color:var(--text-faint);">{{ t.roiDisclaimer }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<dc-import name="Footer" hint-size="100%,420"></dc-import>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { lang: (typeof localStorage !== 'undefined' && localStorage.getItem('gi-lang')) || 'en', roiSpend: 100000, roiIndustry: 'ecommerce' };
+  componentDidMount() {
+    this._onLang = (e) => this.setState({ lang: e.detail });
+    window.addEventListener('gi-lang', this._onLang);
+  }
+  componentWillUnmount() { window.removeEventListener('gi-lang', this._onLang); }
+  renderVals() {
+    const { roiSpend, roiIndustry } = this.state;
+    const t = (window.GI_T && window.GI_T[this.state.lang]) || {};
+    const pillBtnStyle = (name) => {
+      const active = roiIndustry === name;
+      return `padding:9px 18px;border-radius:100px;border:1px solid ${active ? 'transparent' : 'var(--border)'};background:${active ? 'var(--gradient)' : 'var(--surface)'};color:${active ? 'white' : 'var(--text)'};font-weight:600;font-size:13.5px;cursor:pointer;font-family:inherit;`;
+    };
+    const industryMult = { ecommerce: { cpl: 170, roasLow: 2.8, roasHigh: 4.6 }, saas: { cpl: 1100, roasLow: 2.2, roasHigh: 3.8 }, local: { cpl: 300, roasLow: 3.0, roasHigh: 5.2 } };
+    const m = industryMult[roiIndustry];
+    const roiLeads = Math.round(roiSpend / m.cpl);
+    return {
+      t,
+      roiSpend, roiSpendLabel: roiSpend.toLocaleString('en-IN'),
+      setRoiSpend: (e) => {
+        const n = Number(e.target.value);
+        this.setState({ roiSpend: Number.isFinite(n) ? Math.min(1000000, Math.max(10000, n)) : 100000 });
+      },
+      setRoiIndustryEcommerce: () => this.setState({ roiIndustry: 'ecommerce' }),
+      setRoiIndustrySaas: () => this.setState({ roiIndustry: 'saas' }),
+      setRoiIndustryLocal: () => this.setState({ roiIndustry: 'local' }),
+      pillBtnStyleEcommerce: pillBtnStyle('ecommerce'), pillBtnStyleSaas: pillBtnStyle('saas'), pillBtnStyleLocal: pillBtnStyle('local'),
+      roiLeads, roiRoasLow: m.roasLow.toFixed(1), roiRoasHigh: m.roasHigh.toFixed(1)
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+
+<helmet>
+<style>
+.__footer-grid a{display:inline-flex;align-items:center;gap:6px;transition:color 0.18s ease,transform 0.18s ease;}
+.__footer-grid a:hover{color:var(--gold, oklch(78% 0.15 80));transform:translateX(3px);}
+.__footer-col-head{font-size:12px;font-weight:700;color:oklch(58% 0.012 78);text-transform:uppercase;letter-spacing:0.08em;}
+.__footer-bottom-link{transition:color 0.18s ease;}
+.__footer-bottom-link:hover{color:var(--gold, oklch(78% 0.15 80)) !important;}
+.__footer-nl-input{transition:border-color 0.18s ease,box-shadow 0.18s ease;}
+.__footer-nl-input:focus-visible{outline:none;border-color:var(--gold, oklch(78% 0.15 80));box-shadow:0 0 0 3px oklch(78% 0.15 80 / 0.22);}
+@media (max-width:1024px){.__footer-grid{grid-template-columns:1fr 1fr !important;gap:40px 32px !important;}.__footer-col-divider{display:none !important;}}
+@media (max-width:720px){.__footer-grid{grid-template-columns:1fr !important;}}
+</style>
+</helmet>
+<div style="background:var(--text);padding:0 32px 32px;font-family:'Inter','Hind Madurai',sans-serif;position:relative;">
+  <div style="height:3px;background:var(--gradient-gold, linear-gradient(135deg, oklch(78% 0.15 80), oklch(66% 0.13 62)));"></div>
+  <div style="max-width:1280px;margin:0 auto;padding-top:64px;">
+    <div class="__footer-grid" style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr 1.3fr;gap:32px;">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <img src="assets/logo-gold.png" alt="" width="32" height="32" loading="lazy" decoding="async" style="width:32px;height:32px;object-fit:contain;border-radius:7px;" />
+          <span style="font-family:'Inter Tight',sans-serif;font-weight:800;font-size:17px;color:white;">Grow Indie Digital</span>
+        </div>
+        <p style="font-size:14px;color:oklch(68% 0.012 78);margin-top:18px;line-height:1.65;max-width:260px;">{{ t.footerTagline }}</p>
+      </div>
+      <div>
+        <div class="__footer-col-head">{{ t.footerConnect }}</div>
+        <div style="display:flex;flex-direction:column;gap:14px;margin-top:20px;">
+          <a href="https://wa.me/918344735921" target="_blank" rel="noopener" style="font-size:14px;color:oklch(78% 0.012 78);">WhatsApp</a>
+          <a href="tel:+918344735921" style="font-size:14px;color:oklch(78% 0.012 78);">+91 83447 35921</a>
+          <a href="mailto:growindiedigital@gmail.com" style="font-size:14px;color:oklch(78% 0.012 78);">Email</a>
+          <a href="https://instagram.com/GrowIndieDigital" target="_blank" rel="noopener" style="font-size:14px;color:oklch(78% 0.012 78);">Instagram</a>
+        </div>
+      </div>
+      <div>
+        <div class="__footer-col-head">{{ t.footerQuickLinks }}</div>
+        <div style="display:flex;flex-direction:column;gap:14px;margin-top:20px;">
+          <a href="About.dc.html" style="font-size:14px;color:oklch(78% 0.012 78);">{{ t.navAbout }}</a>
+          <a href="Services.dc.html" style="font-size:14px;color:oklch(78% 0.012 78);">{{ t.navServices }}</a>
+          <a href="Industries.dc.html" style="font-size:14px;color:oklch(78% 0.012 78);">{{ t.navIndustries }}</a>
+          <a href="Pricing.dc.html" style="font-size:14px;color:oklch(78% 0.012 78);">{{ t.navPricing }}</a>
+          <a href="Testimonials.dc.html" style="font-size:14px;color:oklch(78% 0.012 78);">{{ t.navTestimonials }}</a>
+        </div>
+      </div>
+      <div>
+        <div class="__footer-col-head">{{ t.footerLegal }}</div>
+        <div style="display:flex;flex-direction:column;gap:14px;margin-top:20px;">
+          <a href="FAQ.dc.html" style="font-size:14px;color:oklch(78% 0.012 78);">{{ t.navFaq }}</a>
+          <a href="Privacy.dc.html" style="font-size:14px;color:oklch(78% 0.012 78);">{{ t.footerPrivacy }}</a>
+          <a href="Terms.dc.html" style="font-size:14px;color:oklch(78% 0.012 78);">{{ t.footerTerms }}</a>
+        </div>
+      </div>
+      <div>
+        <div class="__footer-col-head">{{ t.footerNewsletter }}</div>
+        <form onsubmit="{{ submitNewsletter }}" style="display:flex;gap:8px;margin-top:20px;">
+          <input class="__footer-nl-input" name="email" type="email" required="{{ true }}" maxlength="200" autocomplete="email" aria-label="{{ t.footerNewsletter }}" placeholder="" style="flex:1;min-width:0;padding:12px 13px;border-radius:9px;border:1px solid oklch(38% 0.012 78);background:oklch(22% 0.012 78);color:white;font-size:13.5px;" />
+          <input type="checkbox" name="botcheck" tabindex="-1" aria-hidden="true" autocomplete="off" style="position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;left:-9999px;" />
+          <button type="submit" style="background:var(--gradient-gold, linear-gradient(135deg, oklch(78% 0.15 80), oklch(66% 0.13 62)));color:oklch(20% 0.02 70);border:none;border-radius:9px;padding:12px 17px;font-weight:700;font-size:13.5px;cursor:pointer;white-space:nowrap;transition:transform 0.16s ease,filter 0.16s ease;" style-hover="filter:brightness(1.08);">{{ newsletterLabel }}</button>
+        </form>
+        <p style="font-size:12px;color:oklch(52% 0.012 78);margin-top:10px;line-height:1.5;">{{ t.formPrivacy }}</p>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;margin-top:56px;padding-top:26px;border-top:1px solid oklch(28% 0.012 78);">
+      <div style="max-width:660px;">
+        <div style="font-size:13px;color:oklch(58% 0.012 78);">{{ t.footerCopyright }}</div>
+        <div style="font-size:12px;color:oklch(48% 0.012 78);margin-top:8px;line-height:1.65;">{{ t.footerLegalLine }}</div>
+      </div>
+      <div style="display:flex;gap:20px;">
+        <a class="__footer-bottom-link" href="https://instagram.com/GrowIndieDigital" target="_blank" rel="noopener" style="font-size:13px;color:oklch(68% 0.012 78);">Instagram</a>
+        <a class="__footer-bottom-link" href="https://wa.me/918344735921" target="_blank" rel="noopener" style="font-size:13px;color:oklch(68% 0.012 78);">WhatsApp</a>
+        <a class="__footer-bottom-link" href="mailto:growindiedigital@gmail.com" style="font-size:13px;color:oklch(68% 0.012 78);">Email</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:420}}">
+class Component extends DCLogic {
+  state = { lang: (typeof localStorage !== 'undefined' && localStorage.getItem('gi-lang')) || 'en', newsletterSent: false };
+
+  componentDidMount() {
+    this._onLang = (e) => this.setState({ lang: e.detail });
+    window.addEventListener('gi-lang', this._onLang);
+  }
+  componentWillUnmount() { window.removeEventListener('gi-lang', this._onLang); }
+
+  renderVals() {
+    const { lang, newsletterSent } = this.state;
+    const t = (window.GI_T && window.GI_T[lang]) || {};
+    return {
+      t,
+      newsletterLabel: newsletterSent ? t.footerJoined : t.footerJoin,
+      submitNewsletter: (e) => {
+        e.preventDefault();
+        const form = e.currentTarget;
+        window.GI_FORM.postForm(form, 'Newsletter signup — GrowIndie Digital')
+          .then(() => { this.setState({ newsletterSent: true }); form.reset(); })
+          .catch(() => this.setState({ newsletterSent: false }));
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>

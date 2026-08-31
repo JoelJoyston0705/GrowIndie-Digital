@@ -1,0 +1,6 @@
+# GrowIndie Digital
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+Sitemap: https://growindiedigital.in/sitemap.xml

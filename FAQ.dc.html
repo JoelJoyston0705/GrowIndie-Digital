@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@500;600;700;800;900&family=Hind+Madurai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>FAQ | GrowIndie Digital</title>
+<meta name="description" content="Answers on timelines, pricing, service area, and how GrowIndie Digital's marketing retainers work.">
+<link rel="canonical" href="https://growindiedigital.in/FAQ.dc.html">
+<link rel="icon" href="assets/logo-gold.png" type="image/png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How fast will I see results?","acceptedAnswer":{"@type":"Answer","text":"Paid channels typically show early signal within 2–4 weeks; SEO and organic content compound over 3–6 months."}},
+{"@type":"Question","name":"Do you only work with businesses in Tamil Nadu?","acceptedAnswer":{"@type":"Answer","text":"No — we run campaigns across India and for NRI-facing brands in the UAE and Singapore, in English or Tamil, on IST."}},
+{"@type":"Question","name":"What's included in the free marketing audit?","acceptedAnswer":{"@type":"Answer","text":"A review of your current channels, tracking setup, and competitive position, plus a prioritized action list — no obligation."}},
+{"@type":"Question","name":"How is pricing structured?","acceptedAnswer":{"@type":"Answer","text":"Retainers start at ₹25,000/month, scoped after the audit. Ad spend is billed directly by Google and Meta. GST at 18% applies."}},
+{"@type":"Question","name":"Can you take over from our current agency or in-house team?","acceptedAnswer":{"@type":"Answer","text":"Yes — we regularly audit and take over accounts mid-flight with zero downtime."}}
+]}
+</script>
+<style>
+:root{--bg: oklch(98.6% 0.005 85);--surface: oklch(100% 0 0);--surface-2: oklch(96.4% 0.009 85);--border: oklch(90.5% 0.014 85);--text: oklch(21% 0.012 80);--text-muted: oklch(47% 0.013 80);--text-faint: oklch(63% 0.013 80);--primary: oklch(47% 0.10 72);--gradient: linear-gradient(135deg, oklch(31% 0.022 72), oklch(19% 0.013 70));}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Inter','Hind Madurai',sans-serif;text-wrap:pretty;}
+h1{font-family:'Inter Tight','Hind Madurai',sans-serif;letter-spacing:-0.02em;margin:0;}
+p{margin:0;}
+a{color:var(--primary);text-decoration:none;}
+button{cursor:pointer;}
+button:focus-visible{outline:3px solid var(--primary);outline-offset:2px;border-radius:4px;}
+.__skip{position:absolute;left:-9999px;top:8px;z-index:200;background:var(--text);color:white;padding:12px 20px;border-radius:8px;font-size:14px;font-weight:700;}
+.__skip:focus{left:16px;color:white;}
+</style>
+<script src="content.js"></script>
+<script src="./support.js"></script>
+</helmet>
+<div style="background:var(--bg);min-height:100vh;overflow-x:hidden;">
+<a class="__skip" href="#main">{{ t.skipLink }}</a>
+<dc-import name="Nav" current="faq" hint-size="100%,72"></dc-import>
+
+<div id="main" tabindex="-1" style="padding:110px 32px;">
+  <div style="max-width:840px;margin:0 auto;">
+    <div style="text-align:center;">
+      <div style="font-size:13px;font-weight:700;color:var(--primary);text-transform:uppercase;letter-spacing:0.08em;">{{ t.faqEyebrow }}</div>
+      <h1 style="font-size:clamp(30px,3.6vw,48px);font-weight:800;margin-top:14px;">{{ t.faqTitle }}</h1>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;margin-top:44px;">
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:16px;transition:border-color 0.2s ease,box-shadow 0.2s ease;" style-hover="border-color:var(--primary);box-shadow:0 14px 32px -18px oklch(20% 0.02 78 / 0.3);">
+        <button type="button" onclick="{{ toggleFaq0 }}" aria-expanded="{{ faqOpen0 }}" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:left;font-weight:700;font-size:16px;font-family:inherit;color:inherit;background:none;border:none;padding:22px 26px;">
+          <span>{{ t.faq1Q }}</span><span aria-hidden="true" style="font-size:20px;color:var(--text-muted);">{{ faqIcon0 }}</span>
+        </button>
+        <sc-if value="{{ faqOpen0 }}" hint-placeholder-val="{{ false }}"><p style="font-size:14.5px;color:var(--text-muted);padding:0 26px 22px;line-height:1.6;">{{ t.faq1A }}</p></sc-if>
+      </div>
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:16px;transition:border-color 0.2s ease,box-shadow 0.2s ease;" style-hover="border-color:var(--primary);box-shadow:0 14px 32px -18px oklch(20% 0.02 78 / 0.3);">
+        <button type="button" onclick="{{ toggleFaq1 }}" aria-expanded="{{ faqOpen1 }}" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:left;font-weight:700;font-size:16px;font-family:inherit;color:inherit;background:none;border:none;padding:22px 26px;">
+          <span>{{ t.faq2Q }}</span><span aria-hidden="true" style="font-size:20px;color:var(--text-muted);">{{ faqIcon1 }}</span>
+        </button>
+        <sc-if value="{{ faqOpen1 }}" hint-placeholder-val="{{ false }}"><p style="font-size:14.5px;color:var(--text-muted);padding:0 26px 22px;line-height:1.6;">{{ t.faq2A }}</p></sc-if>
+      </div>
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:16px;transition:border-color 0.2s ease,box-shadow 0.2s ease;" style-hover="border-color:var(--primary);box-shadow:0 14px 32px -18px oklch(20% 0.02 78 / 0.3);">
+        <button type="button" onclick="{{ toggleFaq2 }}" aria-expanded="{{ faqOpen2 }}" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:left;font-weight:700;font-size:16px;font-family:inherit;color:inherit;background:none;border:none;padding:22px 26px;">
+          <span>{{ t.faq3Q }}</span><span aria-hidden="true" style="font-size:20px;color:var(--text-muted);">{{ faqIcon2 }}</span>
+        </button>
+        <sc-if value="{{ faqOpen2 }}" hint-placeholder-val="{{ false }}"><p style="font-size:14.5px;color:var(--text-muted);padding:0 26px 22px;line-height:1.6;">{{ t.faq3A }}</p></sc-if>
+      </div>
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:16px;transition:border-color 0.2s ease,box-shadow 0.2s ease;" style-hover="border-color:var(--primary);box-shadow:0 14px 32px -18px oklch(20% 0.02 78 / 0.3);">
+        <button type="button" onclick="{{ toggleFaq3 }}" aria-expanded="{{ faqOpen3 }}" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:left;font-weight:700;font-size:16px;font-family:inherit;color:inherit;background:none;border:none;padding:22px 26px;">
+          <span>{{ t.faq4Q }}</span><span aria-hidden="true" style="font-size:20px;color:var(--text-muted);">{{ faqIcon3 }}</span>
+        </button>
+        <sc-if value="{{ faqOpen3 }}" hint-placeholder-val="{{ false }}"><p style="font-size:14.5px;color:var(--text-muted);padding:0 26px 22px;line-height:1.6;">{{ t.faq4A }}</p></sc-if>
+      </div>
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:16px;transition:border-color 0.2s ease,box-shadow 0.2s ease;" style-hover="border-color:var(--primary);box-shadow:0 14px 32px -18px oklch(20% 0.02 78 / 0.3);">
+        <button type="button" onclick="{{ toggleFaq4 }}" aria-expanded="{{ faqOpen4 }}" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:left;font-weight:700;font-size:16px;font-family:inherit;color:inherit;background:none;border:none;padding:22px 26px;">
+          <span>{{ t.faq5Q }}</span><span aria-hidden="true" style="font-size:20px;color:var(--text-muted);">{{ faqIcon4 }}</span>
+        </button>
+        <sc-if value="{{ faqOpen4 }}" hint-placeholder-val="{{ false }}"><p style="font-size:14.5px;color:var(--text-muted);padding:0 26px 22px;line-height:1.6;">{{ t.faq5A }}</p></sc-if>
+      </div>
+    </div>
+  </div>
+</div>
+
+<dc-import name="Footer" hint-size="100%,420"></dc-import>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { lang: (typeof localStorage !== 'undefined' && localStorage.getItem('gi-lang')) || 'en', faqOpen: [false, false, false, false, false] };
+  componentDidMount() {
+    this._onLang = (e) => this.setState({ lang: e.detail });
+    window.addEventListener('gi-lang', this._onLang);
+  }
+  componentWillUnmount() { window.removeEventListener('gi-lang', this._onLang); }
+  renderVals() {
+    const { faqOpen } = this.state;
+    const t = (window.GI_T && window.GI_T[this.state.lang]) || {};
+    const toggleFaqAt = (i) => () => this.setState((s) => { const f = [...s.faqOpen]; f[i] = !f[i]; return { faqOpen: f }; });
+    return {
+      t,
+      faqOpen0: faqOpen[0], faqOpen1: faqOpen[1], faqOpen2: faqOpen[2], faqOpen3: faqOpen[3], faqOpen4: faqOpen[4],
+      faqIcon0: faqOpen[0] ? '−' : '+', faqIcon1: faqOpen[1] ? '−' : '+', faqIcon2: faqOpen[2] ? '−' : '+', faqIcon3: faqOpen[3] ? '−' : '+', faqIcon4: faqOpen[4] ? '−' : '+',
+      toggleFaq0: toggleFaqAt(0), toggleFaq1: toggleFaqAt(1), toggleFaq2: toggleFaqAt(2), toggleFaq3: toggleFaqAt(3), toggleFaq4: toggleFaqAt(4)
+    };
+  }
+}
+</script>
+</body>
+</html>

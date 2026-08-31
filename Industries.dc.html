@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@500;600;700;800;900&family=Hind+Madurai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Industries We Serve | GrowIndie Digital</title>
+<meta name="description" content="GrowIndie Digital runs marketing for startups, ecommerce, healthcare, real estate, restaurants, manufacturing, personal brands, and local services across Tamil Nadu and India.">
+<link rel="canonical" href="https://growindiedigital.in/Industries.dc.html">
+<link rel="icon" href="assets/logo-gold.png" type="image/png">
+<style>
+:root{--bg: oklch(98.6% 0.005 85);--surface: oklch(100% 0 0);--surface-2: oklch(96.4% 0.009 85);--border: oklch(90.5% 0.014 85);--text: oklch(21% 0.012 80);--text-muted: oklch(47% 0.013 80);--text-faint: oklch(63% 0.013 80);--primary: oklch(47% 0.10 72);--gradient: linear-gradient(135deg, oklch(31% 0.022 72), oklch(19% 0.013 70));}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Inter','Hind Madurai',sans-serif;text-wrap:pretty;}
+h1,h2{font-family:'Inter Tight','Hind Madurai',sans-serif;letter-spacing:-0.02em;margin:0;}
+p{margin:0;}
+a{color:var(--primary);text-decoration:none;}
+a:hover{color:var(--primary-dark, var(--primary));}
+button,a{cursor:pointer;}
+.__skip{position:absolute;left:-9999px;top:8px;z-index:200;background:var(--text);color:white;padding:12px 20px;border-radius:8px;font-size:14px;font-weight:700;}
+.__skip:focus{left:16px;color:white;}
+</style>
+<script src="content.js"></script>
+<script src="./support.js"></script>
+</helmet>
+<div style="background:var(--bg);min-height:100vh;overflow-x:hidden;">
+<a class="__skip" href="#main">{{ t.skipLink }}</a>
+<dc-import name="Nav" current="industries" hint-size="100%,72"></dc-import>
+
+<div id="main" tabindex="-1" style="padding:110px 32px;">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div style="max-width:640px;">
+      <div style="font-size:13px;font-weight:700;color:var(--primary);text-transform:uppercase;letter-spacing:0.08em;">{{ t.industriesEyebrow }}</div>
+      <h1 style="font-size:clamp(30px,3.6vw,48px);font-weight:800;margin-top:14px;">{{ t.industriesTitle }}</h1>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:44px;">
+      <div style="padding:14px 26px;border-radius:100px;border:1px solid var(--border);background:var(--surface);font-weight:600;font-size:15px;transition:transform 0.2s ease,box-shadow 0.2s ease,border-color 0.2s ease,background-color 0.2s ease;" style-hover="transform:translateY(-3px);border-color:transparent;background:var(--gradient-gold, var(--primary));color:white;box-shadow:0 14px 28px -14px oklch(66% 0.13 62 / 0.5);">{{ t.ind1 }}</div>
+      <div style="padding:14px 26px;border-radius:100px;border:1px solid var(--border);background:var(--surface);font-weight:600;font-size:15px;transition:transform 0.2s ease,box-shadow 0.2s ease,border-color 0.2s ease,background-color 0.2s ease;" style-hover="transform:translateY(-3px);border-color:transparent;background:var(--gradient-gold, var(--primary));color:white;box-shadow:0 14px 28px -14px oklch(66% 0.13 62 / 0.5);">{{ t.ind2 }}</div>
+      <div style="padding:14px 26px;border-radius:100px;border:1px solid var(--border);background:var(--surface);font-weight:600;font-size:15px;transition:transform 0.2s ease,box-shadow 0.2s ease,border-color 0.2s ease,background-color 0.2s ease;" style-hover="transform:translateY(-3px);border-color:transparent;background:var(--gradient-gold, var(--primary));color:white;box-shadow:0 14px 28px -14px oklch(66% 0.13 62 / 0.5);">{{ t.ind3 }}</div>
+      <div style="padding:14px 26px;border-radius:100px;border:1px solid var(--border);background:var(--surface);font-weight:600;font-size:15px;transition:transform 0.2s ease,box-shadow 0.2s ease,border-color 0.2s ease,background-color 0.2s ease;" style-hover="transform:translateY(-3px);border-color:transparent;background:var(--gradient-gold, var(--primary));color:white;box-shadow:0 14px 28px -14px oklch(66% 0.13 62 / 0.5);">{{ t.ind4 }}</div>
+      <div style="padding:14px 26px;border-radius:100px;border:1px solid var(--border);background:var(--surface);font-weight:600;font-size:15px;transition:transform 0.2s ease,box-shadow 0.2s ease,border-color 0.2s ease,background-color 0.2s ease;" style-hover="transform:translateY(-3px);border-color:transparent;background:var(--gradient-gold, var(--primary));color:white;box-shadow:0 14px 28px -14px oklch(66% 0.13 62 / 0.5);">{{ t.ind5 }}</div>
+      <div style="padding:14px 26px;border-radius:100px;border:1px solid var(--border);background:var(--surface);font-weight:600;font-size:15px;transition:transform 0.2s ease,box-shadow 0.2s ease,border-color 0.2s ease,background-color 0.2s ease;" style-hover="transform:translateY(-3px);border-color:transparent;background:var(--gradient-gold, var(--primary));color:white;box-shadow:0 14px 28px -14px oklch(66% 0.13 62 / 0.5);">{{ t.ind6 }}</div>
+      <div style="padding:14px 26px;border-radius:100px;border:1px solid var(--border);background:var(--surface);font-weight:600;font-size:15px;transition:transform 0.2s ease,box-shadow 0.2s ease,border-color 0.2s ease,background-color 0.2s ease;" style-hover="transform:translateY(-3px);border-color:transparent;background:var(--gradient-gold, var(--primary));color:white;box-shadow:0 14px 28px -14px oklch(66% 0.13 62 / 0.5);">{{ t.ind7 }}</div>
+      <div style="padding:14px 26px;border-radius:100px;border:1px solid var(--border);background:var(--surface);font-weight:600;font-size:15px;transition:transform 0.2s ease,box-shadow 0.2s ease,border-color 0.2s ease,background-color 0.2s ease;" style-hover="transform:translateY(-3px);border-color:transparent;background:var(--gradient-gold, var(--primary));color:white;box-shadow:0 14px 28px -14px oklch(66% 0.13 62 / 0.5);">{{ t.ind8 }}</div>
+    </div>
+    <a href="Contact.dc.html" style="display:inline-block;margin-top:56px;background:var(--gradient, linear-gradient(135deg,#4a3d2f,#2b2320));color:white;font-size:15.5px;font-weight:700;padding:16px 30px;border-radius:100px;">{{ t.heroCtaPrimary }}</a>
+  </div>
+</div>
+
+<dc-import name="Footer" hint-size="100%,420"></dc-import>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { lang: (typeof localStorage !== 'undefined' && localStorage.getItem('gi-lang')) || 'en' };
+  componentDidMount() {
+    this._onLang = (e) => this.setState({ lang: e.detail });
+    window.addEventListener('gi-lang', this._onLang);
+  }
+  componentWillUnmount() { window.removeEventListener('gi-lang', this._onLang); }
+  renderVals() {
+    const t = (window.GI_T && window.GI_T[this.state.lang]) || {};
+    return { t };
+  }
+}
+</script>
+</body>
+</html>

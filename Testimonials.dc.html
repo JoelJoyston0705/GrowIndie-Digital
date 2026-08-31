@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@500;600;700;800;900&family=Hind+Madurai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Client Reviews | GrowIndie Digital</title>
+<meta name="description" content="What South Tamil Nadu businesses say about working with GrowIndie Digital — real reviews from a textile showroom, sweets brand, and dental clinic chain.">
+<link rel="canonical" href="https://growindiedigital.in/Testimonials.dc.html">
+<link rel="icon" href="assets/logo-gold.png" type="image/png">
+<style>
+:root{--bg: oklch(98.6% 0.005 85);--surface: oklch(100% 0 0);--surface-2: oklch(96.4% 0.009 85);--border: oklch(90.5% 0.014 85);--text: oklch(21% 0.012 80);--text-muted: oklch(47% 0.013 80);--text-faint: oklch(63% 0.013 80);--primary: oklch(47% 0.10 72);--gold-deep: oklch(66% 0.13 62);--gradient: linear-gradient(135deg, oklch(31% 0.022 72), oklch(19% 0.013 70));--gradient-gold: linear-gradient(135deg, oklch(78% 0.15 80), oklch(66% 0.13 62));}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Inter','Hind Madurai',sans-serif;text-wrap:pretty;}
+h1{font-family:'Inter Tight','Hind Madurai',sans-serif;letter-spacing:-0.02em;margin:0;}
+p{margin:0;}
+a{color:var(--primary);text-decoration:none;}
+.__skip{position:absolute;left:-9999px;top:8px;z-index:200;background:var(--text);color:white;padding:12px 20px;border-radius:8px;font-size:14px;font-weight:700;}
+.__skip:focus{left:16px;color:white;}
+</style>
+<script src="content.js"></script>
+<script src="./support.js"></script>
+</helmet>
+<div style="background:var(--bg);min-height:100vh;overflow-x:hidden;">
+<a class="__skip" href="#main">{{ t.skipLink }}</a>
+<dc-import name="Nav" current="testimonials" hint-size="100%,72"></dc-import>
+
+<div id="main" tabindex="-1" style="padding:110px 32px;">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div style="max-width:640px;margin:0 auto;text-align:center;">
+      <div style="font-size:13px;font-weight:700;color:var(--primary);text-transform:uppercase;letter-spacing:0.08em;">{{ t.testiEyebrow }}</div>
+      <h1 style="font-size:clamp(30px,3.6vw,48px);font-weight:800;margin-top:14px;">{{ t.testiTitle }}</h1>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:24px;margin-top:48px;">
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:28px;display:flex;flex-direction:column;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-6px);border-color:var(--gold-deep);box-shadow:0 22px 44px -20px oklch(20% 0.02 78 / 0.35);">
+        <div aria-label="5 out of 5" style="color:var(--gold-deep);font-size:15px;letter-spacing:3px;">★★★★★</div>
+        <div style="font-size:15.5px;line-height:1.65;color:var(--text);margin-top:16px;flex:1;">{{ t.testi1Quote }}</div>
+        <div style="display:flex;align-items:center;gap:12px;margin-top:24px;padding-top:20px;border-top:1px solid var(--border);">
+          <div aria-hidden="true" style="flex:0 0 auto;width:42px;height:42px;border-radius:50%;background:var(--gradient-gold);color:oklch(24% 0.02 70);display:flex;align-items:center;justify-content:center;font-family:'Inter Tight',sans-serif;font-weight:800;font-size:14.5px;">{{ t.testi1Initials }}</div>
+          <div><div style="font-size:14.5px;font-weight:700;">{{ t.testi1Name }}</div><div style="font-size:12.5px;color:var(--text-faint);margin-top:3px;line-height:1.45;">{{ t.testi1Role }}<br />{{ t.testi1Loc }}</div></div>
+        </div>
+      </div>
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:28px;display:flex;flex-direction:column;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-6px);border-color:var(--gold-deep);box-shadow:0 22px 44px -20px oklch(20% 0.02 78 / 0.35);">
+        <div aria-label="5 out of 5" style="color:var(--gold-deep);font-size:15px;letter-spacing:3px;">★★★★★</div>
+        <div style="font-size:15.5px;line-height:1.65;color:var(--text);margin-top:16px;flex:1;">{{ t.testi2Quote }}</div>
+        <div style="display:flex;align-items:center;gap:12px;margin-top:24px;padding-top:20px;border-top:1px solid var(--border);">
+          <div aria-hidden="true" style="flex:0 0 auto;width:42px;height:42px;border-radius:50%;background:var(--gradient-gold);color:oklch(24% 0.02 70);display:flex;align-items:center;justify-content:center;font-family:'Inter Tight',sans-serif;font-weight:800;font-size:14.5px;">{{ t.testi2Initials }}</div>
+          <div><div style="font-size:14.5px;font-weight:700;">{{ t.testi2Name }}</div><div style="font-size:12.5px;color:var(--text-faint);margin-top:3px;line-height:1.45;">{{ t.testi2Role }}<br />{{ t.testi2Loc }}</div></div>
+        </div>
+      </div>
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:28px;display:flex;flex-direction:column;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-6px);border-color:var(--gold-deep);box-shadow:0 22px 44px -20px oklch(20% 0.02 78 / 0.35);">
+        <div aria-label="5 out of 5" style="color:var(--gold-deep);font-size:15px;letter-spacing:3px;">★★★★★</div>
+        <div style="font-size:15.5px;line-height:1.65;color:var(--text);margin-top:16px;flex:1;">{{ t.testi3Quote }}</div>
+        <div style="display:flex;align-items:center;gap:12px;margin-top:24px;padding-top:20px;border-top:1px solid var(--border);">
+          <div aria-hidden="true" style="flex:0 0 auto;width:42px;height:42px;border-radius:50%;background:var(--gradient-gold);color:oklch(24% 0.02 70);display:flex;align-items:center;justify-content:center;font-family:'Inter Tight',sans-serif;font-weight:800;font-size:14.5px;">{{ t.testi3Initials }}</div>
+          <div><div style="font-size:14.5px;font-weight:700;">{{ t.testi3Name }}</div><div style="font-size:12.5px;color:var(--text-faint);margin-top:3px;line-height:1.45;">{{ t.testi3Role }}<br />{{ t.testi3Loc }}</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<dc-import name="Footer" hint-size="100%,420"></dc-import>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { lang: (typeof localStorage !== 'undefined' && localStorage.getItem('gi-lang')) || 'en' };
+  componentDidMount() {
+    this._onLang = (e) => this.setState({ lang: e.detail });
+    window.addEventListener('gi-lang', this._onLang);
+  }
+  componentWillUnmount() { window.removeEventListener('gi-lang', this._onLang); }
+  renderVals() {
+    const t = (window.GI_T && window.GI_T[this.state.lang]) || {};
+    return { t };
+  }
+}
+</script>
+</body>
+</html>

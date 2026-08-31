@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@500;600;700;800;900&family=Hind+Madurai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Services | GrowIndie Digital</title>
+<meta name="description" content="SEO, Google Ads, social media, branding, content, web development, and creative services from GrowIndie Digital — Thoothukudi's marketing agency.">
+<link rel="canonical" href="https://growindiedigital.in/Services.dc.html">
+<link rel="icon" href="assets/logo-gold.png" type="image/png">
+<style>
+:root{--bg: oklch(98.6% 0.005 85);--surface: oklch(100% 0 0);--surface-2: oklch(96.4% 0.009 85);--border: oklch(90.5% 0.014 85);--text: oklch(21% 0.012 80);--text-muted: oklch(47% 0.013 80);--primary: oklch(47% 0.10 72);--gradient: linear-gradient(135deg, oklch(31% 0.022 72), oklch(19% 0.013 70));--gradient-gold: linear-gradient(135deg, oklch(78% 0.15 80), oklch(66% 0.13 62));}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Inter','Hind Madurai',sans-serif;text-wrap:pretty;}
+h1,h2,h3{font-family:'Inter Tight','Hind Madurai',sans-serif;letter-spacing:-0.02em;margin:0;}
+p{margin:0;}
+a{color:var(--primary);text-decoration:none;}
+button{cursor:pointer;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px);}to{opacity:1;transform:translateY(0);}}
+button:focus-visible,a:focus-visible{outline:3px solid var(--primary);outline-offset:2px;border-radius:4px;}
+.__skip{position:absolute;left:-9999px;top:8px;z-index:200;background:var(--text);color:white;padding:12px 20px;border-radius:8px;font-size:14px;font-weight:700;}
+.__skip:focus{left:16px;color:white;}
+</style>
+<script src="content.js"></script>
+<script src="./support.js"></script>
+</helmet>
+<div style="background:var(--bg);min-height:100vh;overflow-x:hidden;">
+<a class="__skip" href="#main">{{ t.skipLink }}</a>
+<dc-import name="Nav" current="services" hint-size="100%,72"></dc-import>
+
+<div id="main" tabindex="-1" style="padding:110px 32px;">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div style="max-width:640px;margin:0 auto;text-align:center;">
+      <div style="font-size:13px;font-weight:700;color:var(--primary);text-transform:uppercase;letter-spacing:0.08em;">{{ t.servicesEyebrow }}</div>
+      <h1 style="font-size:clamp(30px,3.6vw,48px);font-weight:800;margin-top:14px;">{{ t.servicesTitle }}</h1>
+      <p style="font-size:17px;color:var(--text-muted);margin-top:16px;line-height:1.6;">{{ t.servicesSub }}</p>
+    </div>
+
+    <div role="tablist" aria-label="{{ t.servicesEyebrow }}" style="display:flex;gap:10px;justify-content:center;margin-top:44px;flex-wrap:wrap;">
+      <button role="tab" aria-selected="{{ isTabMarketing }}" onclick="{{ setTabMarketing }}" style="{{ tabBtnStyleMarketing }}">{{ t.tabMarketing }}</button>
+      <button role="tab" aria-selected="{{ isTabBranding }}" onclick="{{ setTabBranding }}" style="{{ tabBtnStyleBranding }}">{{ t.tabBranding }}</button>
+      <button role="tab" aria-selected="{{ isTabCreative }}" onclick="{{ setTabCreative }}" style="{{ tabBtnStyleCreative }}">{{ t.tabCreative }}</button>
+      <button role="tab" aria-selected="{{ isTabTech }}" onclick="{{ setTabTech }}" style="{{ tabBtnStyleTech }}">{{ t.tabTech }}</button>
+      <button role="tab" aria-selected="{{ isTabSpecial }}" onclick="{{ setTabSpecial }}" style="{{ tabBtnStyleSpecial }}">{{ t.tabSpecial }}</button>
+    </div>
+
+    <sc-if value="{{ isTabMarketing }}" hint-placeholder-val="{{ true }}">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:20px;margin-top:44px;animation:fadeUp 0.4s ease;">
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-5px);border-color:var(--gold-deep, var(--primary));box-shadow:0 20px 40px -20px oklch(20% 0.02 78 / 0.35);"><div style="width:38px;height:38px;border-radius:10px;background:var(--gradient-gold);color:oklch(22% 0.02 70);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;">01</div><h3 style="font-size:18px;font-weight:700;margin-top:18px;">{{ t.sMSeoTitle }}</h3><p style="font-size:14.5px;color:var(--text-muted);margin-top:8px;line-height:1.55;">{{ t.sMSeoDesc }}</p></div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-5px);border-color:var(--gold-deep, var(--primary));box-shadow:0 20px 40px -20px oklch(20% 0.02 78 / 0.35);"><div style="width:38px;height:38px;border-radius:10px;background:var(--gradient-gold);color:oklch(22% 0.02 70);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;">02</div><h3 style="font-size:18px;font-weight:700;margin-top:18px;">{{ t.sMAdsTitle }}</h3><p style="font-size:14.5px;color:var(--text-muted);margin-top:8px;line-height:1.55;">{{ t.sMAdsDesc }}</p></div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-5px);border-color:var(--gold-deep, var(--primary));box-shadow:0 20px 40px -20px oklch(20% 0.02 78 / 0.35);"><div style="width:38px;height:38px;border-radius:10px;background:var(--gradient-gold);color:oklch(22% 0.02 70);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;">03</div><h3 style="font-size:18px;font-weight:700;margin-top:18px;">{{ t.sMSmmTitle }}</h3><p style="font-size:14.5px;color:var(--text-muted);margin-top:8px;line-height:1.55;">{{ t.sMSmmDesc }}</p></div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-5px);border-color:var(--gold-deep, var(--primary));box-shadow:0 20px 40px -20px oklch(20% 0.02 78 / 0.35);"><div style="width:38px;height:38px;border-radius:10px;background:var(--gradient-gold);color:oklch(22% 0.02 70);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;">04</div><h3 style="font-size:18px;font-weight:700;margin-top:18px;">{{ t.sMSmMgmtTitle }}</h3><p style="font-size:14.5px;color:var(--text-muted);margin-top:8px;line-height:1.55;">{{ t.sMSmMgmtDesc }}</p></div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-5px);border-color:var(--gold-deep, var(--primary));box-shadow:0 20px 40px -20px oklch(20% 0.02 78 / 0.35);"><div style="width:38px;height:38px;border-radius:10px;background:var(--gradient-gold);color:oklch(22% 0.02 70);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;">05</div><h3 style="font-size:18px;font-weight:700;margin-top:18px;">{{ t.sMContentTitle }}</h3><p style="font-size:14.5px;color:var(--text-muted);margin-top:8px;line-height:1.55;">{{ t.sMContentDesc }}</p></div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-5px);border-color:var(--gold-deep, var(--primary));box-shadow:0 20px 40px -20px oklch(20% 0.02 78 / 0.35);"><div style="width:38px;height:38px;border-radius:10px;background:var(--gradient-gold);color:oklch(22% 0.02 70);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;">06</div><h3 style="font-size:18px;font-weight:700;margin-top:18px;">{{ t.sMCopyTitle }}</h3><p style="font-size:14.5px;color:var(--text-muted);margin-top:8px;line-height:1.55;">{{ t.sMCopyDesc }}</p></div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-5px);border-color:var(--gold-deep, var(--primary));box-shadow:0 20px 40px -20px oklch(20% 0.02 78 / 0.35);"><div style="width:38px;height:38px;border-radius:10px;background:var(--gradient-gold);color:oklch(22% 0.02 70);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;">07</div><h3 style="font-size:18px;font-weight:700;margin-top:18px;">{{ t.sMEmailTitle }}</h3><p style="font-size:14.5px;color:var(--text-muted);margin-top:8px;line-height:1.55;">{{ t.sMEmailDesc }}</p></div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-5px);border-color:var(--gold-deep, var(--primary));box-shadow:0 20px 40px -20px oklch(20% 0.02 78 / 0.35);"><div style="width:38px;height:38px;border-radius:10px;background:var(--gradient-gold);color:oklch(22% 0.02 70);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;">08</div><h3 style="font-size:18px;font-weight:700;margin-top:18px;">{{ t.sMWhatsappTitle }}</h3><p style="font-size:14.5px;color:var(--text-muted);margin-top:8px;line-height:1.55;">{{ t.sMWhatsappDesc }}</p></div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-5px);border-color:var(--gold-deep, var(--primary));box-shadow:0 20px 40px -20px oklch(20% 0.02 78 / 0.35);"><div style="width:38px;height:38px;border-radius:10px;background:var(--gradient-gold);color:oklch(22% 0.02 70);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;">09</div><h3 style="font-size:18px;font-weight:700;margin-top:18px;">{{ t.sMInfluencerTitle }}</h3><p style="font-size:14.5px;color:var(--text-muted);margin-top:8px;line-height:1.55;">{{ t.sMInfluencerDesc }}</p></div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-5px);border-color:var(--gold-deep, var(--primary));box-shadow:0 20px 40px -20px oklch(20% 0.02 78 / 0.35);"><div style="width:38px;height:38px;border-radius:10px;background:var(--gradient-gold);color:oklch(22% 0.02 70);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;">10</div><h3 style="font-size:18px;font-weight:700;margin-top:18px;">{{ t.sMYoutubeTitle }}</h3><p style="font-size:14.5px;color:var(--text-muted);margin-top:8px;line-height:1.55;">{{ t.sMYoutubeDesc }}</p></div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-5px);border-color:var(--gold-deep, var(--primary));box-shadow:0 20px 40px -20px oklch(20% 0.02 78 / 0.35);"><div style="width:38px;height:38px;border-radius:10px;background:var(--gradient-gold);color:oklch(22% 0.02 70);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;">11</div><h3 style="font-size:18px;font-weight:700;margin-top:18px;">{{ t.sMMediaTitle }}</h3><p style="font-size:14.5px;color:var(--text-muted);margin-top:8px;line-height:1.55;">{{ t.sMMediaDesc }}</p></div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isTabBranding }}" hint-placeholder-val="{{ false }}">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:20px;margin-top:44px;animation:fadeUp 0.4s ease;">
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-5px);border-color:var(--gold-deep, var(--primary));box-shadow:0 20px 40px -20px oklch(20% 0.02 78 / 0.35);"><div style="width:38px;height:38px;border-radius:10px;background:var(--gradient-gold);color:oklch(22% 0.02 70);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;">01</div><h3 style="font-size:18px;font-weight:700;margin-top:18px;">{{ t.sBLogoTitle }}</h3><p style="font-size:14.5px;color:var(--text-muted);margin-top:8px;line-height:1.55;">{{ t.sBLogoDesc }}</p></div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-5px);border-color:var(--gold-deep, var(--primary));box-shadow:0 20px 40px -20px oklch(20% 0.02 78 / 0.35);"><div style="width:38px;height:38px;border-radius:10px;background:var(--gradient-gold);color:oklch(22% 0.02 70);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;">02</div><h3 style="font-size:18px;font-weight:700;margin-top:18px;">{{ t.sBIdentityTitle }}</h3><p style="font-size:14.5px;color:var(--text-muted);margin-top:8px;line-height:1.55;">{{ t.sBIdentityDesc }}</p></div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-5px);border-color:var(--gold-deep, var(--primary));box-shadow:0 20px 40px -20px oklch(20% 0.02 78 / 0.35);"><div style="width:38px;height:38px;border-radius:10px;background:var(--gradient-gold);color:oklch(22% 0.02 70);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;">03</div><h3 style="font-size:18px;font-weight:700;margin-top:18px;">{{ t.sBStrategyTitle }}</h3><p style="font-size:14.5px;color:var(--text-muted);margin-top:8px;line-height:1.55;">{{ t.sBStrategyDesc }}</p></div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isTabCreative }}" hint-placeholder-val="{{ false }}">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:20px;margin-top:44px;animation:fadeUp 0.4s ease;">
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-5px);border-color:var(--gold-deep, var(--primary));box-shadow:0 20px 40px -20px oklch(20% 0.02 78 / 0.35);"><div style="width:38px;height:38px;border-radius:10px;background:var(--gradient-gold);color:oklch(22% 0.02 70);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;">01</div><h3 style="font-size:18px;font-weight:700;margin-top:18px;">{{ t.sCGraphicTitle }}</h3><p style="font-size:14.5px;color:var(--text-muted);margin-top:8px;line-height:1.55;">{{ t.sCGraphicDesc }}</p></div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-5px);border-color:var(--gold-deep, var(--primary));box-shadow:0 20px 40px -20px oklch(20% 0.02 78 / 0.35);"><div style="width:38px;height:38px;border-radius:10px;background:var(--gradient-gold);color:oklch(22% 0.02 70);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;">02</div><h3 style="font-size:18px;font-weight:700;margin-top:18px;">{{ t.sCPhotoTitle }}</h3><p style="font-size:14.5px;color:var(--text-muted);margin-top:8px;line-height:1.55;">{{ t.sCPhotoDesc }}</p></div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-5px);border-color:var(--gold-deep, var(--primary));box-shadow:0 20px 40px -20px oklch(20% 0.02 78 / 0.35);"><div style="width:38px;height:38px;border-radius:10px;background:var(--gradient-gold);color:oklch(22% 0.02 70);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;">03</div><h3 style="font-size:18px;font-weight:700;margin-top:18px;">{{ t.sCProductTitle }}</h3><p style="font-size:14.5px;color:var(--text-muted);margin-top:8px;line-height:1.55;">{{ t.sCProductDesc }}</p></div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-5px);border-color:var(--gold-deep, var(--primary));box-shadow:0 20px 40px -20px oklch(20% 0.02 78 / 0.35);"><div style="width:38px;height:38px;border-radius:10px;background:var(--gradient-gold);color:oklch(22% 0.02 70);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;">04</div><h3 style="font-size:18px;font-weight:700;margin-top:18px;">{{ t.sCShortsTitle }}</h3><p style="font-size:14.5px;color:var(--text-muted);margin-top:8px;line-height:1.55;">{{ t.sCShortsDesc }}</p></div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isTabTech }}" hint-placeholder-val="{{ false }}">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:20px;margin-top:44px;animation:fadeUp 0.4s ease;">
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-5px);border-color:var(--gold-deep, var(--primary));box-shadow:0 20px 40px -20px oklch(20% 0.02 78 / 0.35);"><div style="width:38px;height:38px;border-radius:10px;background:var(--gradient-gold);color:oklch(22% 0.02 70);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;">01</div><h3 style="font-size:18px;font-weight:700;margin-top:18px;">{{ t.sTWebTitle }}</h3><p style="font-size:14.5px;color:var(--text-muted);margin-top:8px;line-height:1.55;">{{ t.sTWebDesc }}</p></div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-5px);border-color:var(--gold-deep, var(--primary));box-shadow:0 20px 40px -20px oklch(20% 0.02 78 / 0.35);"><div style="width:38px;height:38px;border-radius:10px;background:var(--gradient-gold);color:oklch(22% 0.02 70);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;">02</div><h3 style="font-size:18px;font-weight:700;margin-top:18px;">{{ t.sTAnalyticsTitle }}</h3><p style="font-size:14.5px;color:var(--text-muted);margin-top:8px;line-height:1.55;">{{ t.sTAnalyticsDesc }}</p></div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-5px);border-color:var(--gold-deep, var(--primary));box-shadow:0 20px 40px -20px oklch(20% 0.02 78 / 0.35);"><div style="width:38px;height:38px;border-radius:10px;background:var(--gradient-gold);color:oklch(22% 0.02 70);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;">03</div><h3 style="font-size:18px;font-weight:700;margin-top:18px;">{{ t.sTAiTitle }}</h3><p style="font-size:14.5px;color:var(--text-muted);margin-top:8px;line-height:1.55;">{{ t.sTAiDesc }}</p></div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-5px);border-color:var(--gold-deep, var(--primary));box-shadow:0 20px 40px -20px oklch(20% 0.02 78 / 0.35);"><div style="width:38px;height:38px;border-radius:10px;background:var(--gradient-gold);color:oklch(22% 0.02 70);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;">04</div><h3 style="font-size:18px;font-weight:700;margin-top:18px;">{{ t.sTConsultTitle }}</h3><p style="font-size:14.5px;color:var(--text-muted);margin-top:8px;line-height:1.55;">{{ t.sTConsultDesc }}</p></div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isTabSpecial }}" hint-placeholder-val="{{ false }}">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:20px;margin-top:44px;animation:fadeUp 0.4s ease;">
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-5px);border-color:var(--gold-deep, var(--primary));box-shadow:0 20px 40px -20px oklch(20% 0.02 78 / 0.35);"><div style="width:38px;height:38px;border-radius:10px;background:var(--gradient-gold);color:oklch(22% 0.02 70);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;">01</div><h3 style="font-size:18px;font-weight:700;margin-top:18px;">{{ t.sSPhotoTitle }}</h3><p style="font-size:14.5px;color:var(--text-muted);margin-top:8px;line-height:1.55;">{{ t.sSPhotoDesc }}</p></div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;" style-hover="transform:translateY(-5px);border-color:var(--gold-deep, var(--primary));box-shadow:0 20px 40px -20px oklch(20% 0.02 78 / 0.35);"><div style="width:38px;height:38px;border-radius:10px;background:var(--gradient-gold);color:oklch(22% 0.02 70);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;">02</div><h3 style="font-size:18px;font-weight:700;margin-top:18px;">{{ t.sSVideoTitle }}</h3><p style="font-size:14.5px;color:var(--text-muted);margin-top:8px;line-height:1.55;">{{ t.sSVideoDesc }}</p></div>
+      </div>
+    </sc-if>
+  </div>
+</div>
+
+<dc-import name="Footer" hint-size="100%,420"></dc-import>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { lang: (typeof localStorage !== 'undefined' && localStorage.getItem('gi-lang')) || 'en', tab: 'Marketing' };
+  componentDidMount() {
+    this._onLang = (e) => this.setState({ lang: e.detail });
+    window.addEventListener('gi-lang', this._onLang);
+  }
+  componentWillUnmount() { window.removeEventListener('gi-lang', this._onLang); }
+  renderVals() {
+    const { tab } = this.state;
+    const t = (window.GI_T && window.GI_T[this.state.lang]) || {};
+    const tabBtnStyle = (name) => {
+      const active = tab === name;
+      return `padding:11px 20px;border-radius:100px;border:1px solid ${active ? 'transparent' : 'var(--border)'};background:${active ? 'var(--gradient)' : 'var(--surface)'};color:${active ? 'white' : 'var(--text)'};font-weight:700;font-size:14px;cursor:pointer;font-family:inherit;`;
+    };
+    return {
+      t,
+      isTabMarketing: tab === 'Marketing', isTabBranding: tab === 'Branding', isTabCreative: tab === 'Creative', isTabTech: tab === 'Tech', isTabSpecial: tab === 'Special',
+      setTabMarketing: () => this.setState({ tab: 'Marketing' }), setTabBranding: () => this.setState({ tab: 'Branding' }),
+      setTabCreative: () => this.setState({ tab: 'Creative' }), setTabTech: () => this.setState({ tab: 'Tech' }), setTabSpecial: () => this.setState({ tab: 'Special' }),
+      tabBtnStyleMarketing: tabBtnStyle('Marketing'), tabBtnStyleBranding: tabBtnStyle('Branding'), tabBtnStyleCreative: tabBtnStyle('Creative'),
+      tabBtnStyleTech: tabBtnStyle('Tech'), tabBtnStyleSpecial: tabBtnStyle('Special')
+    };
+  }
+}
+</script>
+</body>
+</html>
